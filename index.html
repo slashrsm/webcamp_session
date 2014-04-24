@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Drupal 8 FTW</title>
+
+		<meta name="description" content="Session about Drupal for WebCamp in Ljubljana, Slovenija.">
+		<meta name="author" content="Janez Urevc">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Drupal 8 FTW!</h1>
+					<h3>A journey in the world of the Drop</h3>
+					<p>
+						<small><a href="http://janezurevc.name">Janez Urevc</a> / <a href="http://twitter.com/slashrsm">@slashrsm</a></small>
+					</p>
+				</section>
+
+        <section>
+          <img src="./img/druplicon.png" />
+	  
+          <aside class="notes">
+            - Druapl<br />
+            - web CMS/Framework<br />
+          </aside>
+        </section>
+
+        <section>
+          <img src="./img/php.png" style="position: relative; right: -3em; z-index: 0;" />
+          <img class="fragment" src="./img/gpl.png" data-fragment-index="0" style="position: relative; right: 5em; z-index: 1;" />
+          <img class="fragment" src="./img/wtc.png" data-fragment-index="1" style="position: relative; top: -12em; right: -5em; z-index: 2;" />
+          <img class="fragment" src="./img/graph.png" data-fragment-index="2" style="position: relative; top: -15em; right: 15em; z-index: 2;" />
+          <img class="fragment" src="./img/blah.png" data-fragment-index="3" style="position: relative; top: -35em; right: 5em; z-index: 2;" />
+	  
+          <aside class="notes">
+	    - i could talk about....<br />
+            - PHP<br />
+            - free software - GPL<br />
+            - around since 2001<br />
+            - good adoptions - specially higher end market<br />
+            - but I will not :) - 'cos it's boring<br />
+          </aside>
+        </section>
+
+        <section>
+          <img src="./img/print.jpg" />
+
+          <aside class="notes">
+	    - how is Drupal different?<br />
+            - other CMSes are like print - distribution of content<br />
+          </aside>
+        </section>
+
+        <section>
+          <img src="./img/mesh.png" />
+          <aside class="notes">
+	    - Drupal has 2-way communication in it's gens<br />
+            - UGC - no problem<br />
+            - users, roles, powerfull permission system<br />
+            - can be used as CMS or as Framework - very powerfull!<br />
+	    - great community, modular, powerfull, steep learning curve (we are trying to fix that) <br />
+          </aside>
+        </section>
+
+        <section>
+	  <section>
+            <img src="./img/model.png" />
+	    <h3>Entities and fields</h3>
+
+            <aside class="notes">
+	      - content == entities<br />
+              - diff types of content<br />
+              - content, products, product variations, taxonomy terms<br />
+            </aside>
+	  </section>
+
+	  <section>
+            <img src="./img/fields.png" />
+
+            <aside class="notes">
+	      - easly add fields to entities<br />
+              - field types - how is data stored?<br />
+            </aside>
+	  </section>
+
+	  <section>
+            <img src="./img/form.png" />
+
+            <aside class="notes">
+	      - we get for for free<br />
+              - field widgets - how is data created?<br />
+              - forms, display, storage for free!<br />
+            </aside>
+	  </section>
+
+        </section>
+
+        <section>
+	  <section>
+            <img src="./img/views.jpg" />
+	    <h3>Views</h3>
+
+            <aside class="notes">
+	      - data presentation tool<br />
+              - can practicly build entire page with views and entities/fields<br />
+              - loads data and displays it<br />
+            </aside>
+	  </section>
+
+	  <section>
+            <img src="./img/views_ui.png" />
+
+            <aside class="notes">
+	      - plugable<br />
+              - pagers<br />
+              - can display data in different forms: tables, grids, lists, carousels, ...<br />
+            </aside>
+	  </section>
+        </section>
+
+        <section>
+	  <h3>Other sweet parts of the drop</h3>
+	  <ul>
+	    <li class="fragment" data-fragment-index="0">image styles - image processing</li>
+	    <li class="fragment" data-fragment-index="1">security</li>
+	    <li class="fragment" data-fragment-index="2">SEO friendly</li>
+	    <li class="fragment" data-fragment-index="3">commerce</li>
+	    <li class="fragment" data-fragment-index="4">multilingual</li>
+	    <li class="fragment" data-fragment-index="5">layout configuraton</li>
+	    <li class="fragment" data-fragment-index="6">3rd party integrations</li>
+	    <li class="fragment" data-fragment-index="7">webforms</li>
+	  </ul>
+
+            <aside class="notes">
+	      - styles: page footprint<br />
+              - seo: automatic generation of semantic urls, sitemaps, meta data, ...<br />
+              - 3rd party: Solr, Elasticsearch, Disqus, Facebook, memcache, Mongo, ...<br />
+	      - webforms: great tool for data collection<br />
+            </aside>
+
+        </section>
+
+	<section>
+            <img src="./img/drupal8.png" />
+
+            <aside class="notes">
+	      - "not invented here"<br />
+	      - Symfony, Guzzle, PHPUnit, Composer, ...<br />
+	      - Views<br />
+	      - configuration management<br />
+	      - non HTML-centric (REST)<br />
+            </aside>
+	</section>
+
+	<section>
+	  <h1>Thank you!</h1>
+	  <p>
+	    <small><a href="http://janezurevc.name">Janez Urevc</a> / <a href="http://twitter.com/slashrsm">@slashrsm</a></small>
+	  </p>
+	</section>
+	
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+        width: '95%',
+        height: '90%',
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'socket.io/socket.io.js', async: true },
+          { src: 'plugin/notes-server/client.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
